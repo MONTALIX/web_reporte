@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTALIX | Global Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fondo-oscuro: #0f172a;
+            --fondo-tarjeta: #1e293b;
+            --azul-electrico: #3b82f6;
+            --texto-principal: #f8fafc;
+            --texto-secundario: #94a3b8;
+            --verde: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--fondo-oscuro);
+            color: var(--texto-principal);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Encabezado Principal */
+        .main-header {
+            background: var(--fondo-tarjeta);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 50px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .main-header h1 {
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .main-header h2 {
+            font-size: 1em;
+            color: var(--azul-electrico);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .main-header p {
+            color: var(--texto-secundario);
+            font-size: 1.1em;
+        }
+
+        /* Grid de Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .service-icon {
+            font-size: 1.5em;
+            color: var(--azul-electrico);
+        }
+
+        .service-text h3 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .service-text p {
+            color: var(--texto-secundario);
+            font-size: 0.9em;
+        }
+
+        /* Sección del Producto */
+        .product-section {
+            background: var(--fondo-tarjeta);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .product-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .product-text p {
+            color: var(--texto-secundario);
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .price-tag {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: var(--verde);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--azul-electrico);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background 0.3s;
+            text-align: center;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: var(--texto-secundario);
+            font-size: 0.9em;
+            padding-top: 40px;
+            border-top: 1px solid #334155;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid, .product-content {
+                grid-template-columns: 1fr;
+            }
+            .main-header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Encabezado -->
+        <header class="main-header">
+            <h1>MONTALIX</h1>
+            <h2>Global Technology Group</h2>
+            <p>Innovación sin límites</p>
+        </header>
+
+        <!-- Servicios -->
+        <section class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">&lt;/&gt;</div>
+                <div class="service-text">
+                    <h3>Software</h3>
+                    <p>Aplicaciones y plataformas</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🧠</div>
+                <div class="service-text">
+                    <h3>Inteligencia Artificial</h3>
+                    <p>IA y automatización</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🔬</div>
+                <div class="service-text">
+                    <h3>Investigación</h3>
+                    <p>Ciencia y nuevos desarrollos</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">⚙️</div>
+                <div class="service-text">
+                    <h3>Ingeniería</h3>
+                    <p>Hardware y sistemas</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🛡️</div>
+                <div class="service-text">
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección digital</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🤖</div>
+                <div class="service-text">
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Robótica y nuevas tecnologías</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">💡</div>
+                <div class="service-text">
+                    <h3>Consultoría</h3>
+                    <p>Estrategia e innovación</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🌐</div>
+                <div class="service-text">
+                    <h3>Desarrollo Digital</h3>
+                    <p>Soluciones y servicios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Producto Estrella -->
+        <section class="product-section">
+            <h2>Nuestro Producto</h2>
+            
+            <div class="product-content">
+                <div class="product-text">
+                    <h3 style="color: var(--azul-electrico); margin-bottom: 10px;">FinReport</h3>
+                    <p>Transforma tus hojas de Excel en reportes financieros profesionales en segundos. Diseñado para contadores, PyMEs y consultores que quieren ahorrar horas de trabajo.</p>
+<ul style="color: var(--texto-secundario); margin-bottom: 20px; padding-left: 20px;">
+    <li>Detección automática de columnas (incluso en Excels desordenados)</li>
+    <li>3 tipos de reportes: Ingresos, Ventas e Impuestos (IVA)</li>
+    <li>Personalización de colores corporativos</li>
+    <li>Gráficos profesionales listos para presentar</li>
+</ul>
+                    </ul>
+                </div>
+                <div class="product-image">
+                    <img src="reporte_ejemplo.png" alt="Ejemplo de reporte financiero">
+                </div>
+            </div>
+
+            <div class="price-tag">$5.000 CLP</div>
+            <p style="text-align: center; color: var(--texto-secundario); margin-bottom: 20px;">Pago único. Licencia para 1 usuario.</p>
+            
+            <!-- Botón de compra con correo pre-escrito -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=montalix.globaltecnologies@gmail.com&su=Quiero%20comprar%20FinReport&body=Hola%20Alexander,%20quiero%20comprar%20la%20licencia%20de%20FinReport.%20%C2%BFC%C3%B3mo%20hago%20la%20transferencia?" target="_blank" class="btn">Comprar Ahora</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 MONTALIX Global Technologies.</p>
+            <p>Contacto: montalix.globaltecnologies@gmail.com</p>
+        </footer>
+
+    </div>
+</body>
+</html>
