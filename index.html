@@ -34,7 +34,7 @@
             padding: 40px 20px;
         }
 
-        /* Encabezado Principal (Tarjeta grande) */
+        /* Encabezado Principal */
         .main-header {
             background: var(--fondo-tarjeta);
             border: 1px solid #334155;
@@ -65,7 +65,7 @@
             font-size: 1.1em;
         }
 
-        /* Grid de Servicios (2 columnas) */
+        /* Grid de Servicios */
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -95,7 +95,7 @@
             font-size: 0.9em;
         }
 
-        /* Sección del Producto (Reporte) */
+        /* Sección del Producto */
         .product-section {
             background: var(--fondo-tarjeta);
             border: 1px solid #334155;
@@ -150,6 +150,8 @@
             transition: background 0.3s;
             text-align: center;
             width: 100%;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -178,7 +180,7 @@
 <body>
     <div class="container">
         
-        <!-- Encabezado Principal -->
+        <!-- Encabezado -->
         <header class="main-header">
             <h1>MONTALIX</h1>
             <h2>Global Technology Group</h2>
@@ -245,7 +247,7 @@
             </div>
         </section>
 
-        <!-- Producto Estrella (FinReport) -->
+        <!-- Producto Estrella -->
         <section class="product-section">
             <h2>Nuestro Producto</h2>
             
@@ -267,11 +269,11 @@
             <div class="price-tag">$15.000 CLP</div>
             <p style="text-align: center; color: var(--texto-secundario); margin-bottom: 20px;">Pago único. Licencia para 1 usuario.</p>
             
-            <!-- Botón con el nuevo correo -->
-            <a href="mailto:montalix.globaltecnologies@gmail.com?subject=Quiero%20comprar%20FinReport" class="btn">Comprar Ahora</a>
+            <!-- Botón de compra con correo pre-escrito -->
+            <a href="mailto:montalix.globaltecnologies@gmail.com?subject=Quiero%20comprar%20FinReport&body=Hola%20Alexander,%20quiero%20comprar%20la%20licencia%20de%20FinReport.%20%C2%BFC%C3%B3mo%20hago%20la%20transferencia?" class="btn">Comprar Ahora</a>
         </section>
 
-        <!-- Footer con el nuevo correo -->
+        <!-- Footer -->
         <footer class="footer">
             <p>© 2026 MONTALIX Global Technologies.</p>
             <p>Contacto: montalix.globaltecnologies@gmail.com</p>
